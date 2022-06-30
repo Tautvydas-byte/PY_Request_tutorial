@@ -1,6 +1,8 @@
 import requests
 
-resp = requests.get("https://reqres.in/api/users?page=2")
+parameter={"page":2}
+resp = requests.get("https://reqres.in/api/users",params=parameter)
+print(resp.url)
 
 code = resp.status_code
 # assert code == 200, "Code does not match"
