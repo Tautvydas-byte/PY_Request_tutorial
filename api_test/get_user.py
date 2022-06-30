@@ -17,6 +17,8 @@ assert (json_response["data"][0]["email"]).endswith("reqres.in"), "email format 
 
 print(json_response["data"][2]["last_name"])
 assert (json_response["data"][2]["last_name"]) != None, "Last name is None"
+
+print(json_response["support"]["url"])
 # assert (json_response["data"][0]["first_name"]).endswith("gmail.com"),"email format is not matching the correct"
 # print(resp.text)
 # print(resp.content)
