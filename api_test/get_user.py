@@ -11,8 +11,11 @@ print(json_response["total_pages"])
 assert json_response["total_pages"] == 2, "total pages count is not matching"
 
 print(json_response["data"][0]["email"])
-assert (json_response["data"][0]["email"]).endswith("gmail.com"),"email format is not matching the correct"
+assert (json_response["data"][0]["email"]).endswith("reqres.in"), "email format is not matching the correct"
 
+print(json_response["data"][2]["last_name"])
+assert (json_response["data"][2]["last_name"]) != None, "Last name is None"
+# assert (json_response["data"][0]["first_name"]).endswith("gmail.com"),"email format is not matching the correct"
 # print(resp.text)
 # print(resp.content)
 # print(resp.json())
