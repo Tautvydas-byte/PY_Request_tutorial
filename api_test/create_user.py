@@ -1,11 +1,10 @@
 import requests
 
 payload = {
-	"name": "Mukesh",
-	"job": "automation"
+    "email": "eve.holt@reqres.in",
+    "password": "pistol"
 }
 
-resp = requests.post("https://reqres.in/api/users", data=payload)
+resp = requests.post("https://reqres.in/api/register", data=payload)
 print(resp)
-print(resp.json())
-assert resp.json()["job"] == "automation"
+print(resp.json()["token"])
