@@ -1,1 +1,22 @@
+https://reqres.in/
+
 print(dir(resp)) #properties that could be used
+
+In put -all properties of the object be provided while making request
+record- exist- update/replace
+record- does not exist- will create user
+{
+    "Name":"Tautvis",
+    "Phone":56895,
+    "Address":"Vilnus"
+}
+
+In Patch- specify only the properties that you want to update.
+
+{
+    "Address":"Kaunas"
+}
+https://httpbin.org/
+https://httpbin.org/
+API - Slow - Down
+payment - 30 sec, then timeout
